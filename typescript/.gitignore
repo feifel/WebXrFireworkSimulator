@@ -8,7 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# remove dist folder to publish via GitHub Pages
+# dist
 dist-ssr
 *.local
 
