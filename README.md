@@ -1,7 +1,38 @@
-# WebXR Firework Simulator
-Firework Simulator to build and watch 3D fireworks in the browser and in VR (virtual reality). It runs on nearly every browser and recent headset (PC-VR and Standalone).
+# create-svelte
 
-# ChangeLog
-## 2024.02.11
-Include a Basic Scene with a ground and a ground, sphere, light and a camera. Documented here: 
-https://doc.babylonjs.com/setup/templates/basicTemplates/basicJSPG
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
