@@ -3,7 +3,7 @@
 </script>
 
 <button aria-label="Expander" class:open on:click={() => open = !open}>
-	<svg width=32 height=26>
+	<svg width=32 height=27>
 		<line id="top" x1=8 y1=2  x2=26 y2=11/>
 		<line id="bottom" x1=8 y1=22 x2=26 y2=11/>
 	</svg>

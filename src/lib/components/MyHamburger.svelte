@@ -1,9 +1,9 @@
 <script>
-	export let open = false
+	export let showLeftSideBar = false
 </script>
 
-<button aria-label="Hamburger" class:open on:click={() => open = !open}>
-	<svg width=32 height=26>
+<button aria-label="Hamburger" class:showLeftSideBar on:click={() => showLeftSideBar = !showLeftSideBar}>
+	<svg width=32 height=27>
 		<line id="top" x1=0 y1=2  x2=32 y2=2/>
 		<line id="middle" x1=0 y1=12 x2=32 y2=12/>
 		<line id="bottom" x1=0 y1=22 x2=32 y2=22/>
@@ -35,16 +35,16 @@
 		transform: scale(0.7)
 	}
 */	
-	.open #top {
+	.showLeftSideBar #top {
 		transform: translate(6px, 0px) rotate(45deg)
 	}
 	
-	.open #middle {
+	.showLeftSideBar #middle {
 		opacity: 0;
 	}
 	
     
-    .open #bottom {
+    .showLeftSideBar #bottom {
 		transform: translate(-12px, 9px) rotate(-45deg)
 	}
     
