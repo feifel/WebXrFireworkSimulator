@@ -4,6 +4,16 @@
     @use "@picocss/pico/scss/pico" with (
         $theme-color: "azure"
     );
+    #layout {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    };
+    #content {
+        flex:1;
+        position: relative;
+        overflow: auto;
+    }
 </style>
 
 <script lang="ts">
@@ -13,10 +23,13 @@
 
 	let showLeftSideBar = false
 </script>
-
-<MyHeader bind:showLeftSideBar/>
-<main>
-    <MyLeftSidebar bind:showLeftSideBar/>
-    <slot />
-</main>
-<footer/>
+<div id="layout">
+    <MyHeader bind:showLeftSideBar/>
+    <div id="content">
+        <MyLeftSidebar bind:showLeftSideBar/>
+        <main>
+            <slot />
+       </main>  
+    </div>
+    <footer/>
+</div>
