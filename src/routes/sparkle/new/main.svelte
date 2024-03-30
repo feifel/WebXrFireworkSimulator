@@ -11,6 +11,4 @@
     }
 </style>
 <main>
-    <MyTitle fontSize='30px'>Sparkle</MyTitle>
-    List of available Sparkle:
 </main>

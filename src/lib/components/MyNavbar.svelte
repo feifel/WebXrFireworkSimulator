@@ -22,9 +22,11 @@
     }
     ul {
         width:175px;
-        list-style-type: none; /* Remove bullets */
         padding: 0; /* Remove padding */
         margin: 10px; /* Remove margins */
+    }
+    li {
+        list-style-type: none; /* Remove bullets */
     }
     a {
         text-decoration: none;

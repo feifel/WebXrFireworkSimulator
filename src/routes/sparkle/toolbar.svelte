@@ -1,13 +1,18 @@
 <script>
+	import MyTitle from '$lib/components/MyTitle.svelte';
     import MyToolbar from '$lib/components/MyToolbar.svelte';
 </script>
+<link rel="stylesheet" href="/global.css">
 <MyToolbar>
-    <h1>Toolbar</h1>
-    <br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
-    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />0<br />
+    <MyTitle fontSize='30px'>Sparkle</MyTitle>
+    Actions:
+    <ul>
+        <li><a href="/sparkle/new">New Sparkle</a></li>
+        <li><a href="#import">Import Sparkle</a></li>
+    </ul>
+    Selected:    
+    <ul>
+        <li><a href="#export">Export Sparkle</a></li>
+        <li><a href="#delete">Delete Sparkle</a></li>
+    </ul>
 </MyToolbar>
