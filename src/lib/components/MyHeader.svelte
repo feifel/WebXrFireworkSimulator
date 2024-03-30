@@ -1,22 +1,25 @@
 <script>
-	import MyHamburger from './MyHamburger.svelte'
-	import MyTitle from './MyTitle.svelte'
-	import MyExpander from './MyExpander.svelte'
-	
-	export let showLeftSideBar = false
+	import MyNavbarButton from './MyNavbarButton.svelte'
+	import MyHeaderTitle from './MyHeaderTitle.svelte'
+	import MyToolbarButton from './MyToolbarButton.svelte'
+	import { showToolbarButton } from './MyStore'; // Import the store
 </script>
-
-<header>
-    <nav>
-        <ul><li><a href="#1"><MyHamburger bind:showLeftSideBar={showLeftSideBar}/></a></li></ul>
-        <ul><li><MyTitle/></li></ul>
-        <ul><li><a href="#2"><MyExpander/></a></li></ul>
-    </nav>
-</header>
-
 <style>
-	nav {
-		margin-left:25px; 
-		margin-right:25px
+	header {
+        grid-area: header;
+        display: flex;
+		border-bottom: solid 2px var(--pico-muted-border-color);
+        /*border: 5px solid yellow;*/
+	}
+	center {
+		flex: 1;
 	}
 </style>
+
+<header>
+    <a href="#1"><MyNavbarButton/></a>
+    <center><MyHeaderTitle/></center>
+	{#if showToolbarButton}
+		<a href="#2"><MyToolbarButton/></a>
+	{/if}
+</header>

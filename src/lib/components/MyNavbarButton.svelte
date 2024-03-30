@@ -1,8 +1,12 @@
-<script>
-	export let showLeftSideBar = false
+<script lang="ts">
+	import { showNavbar } from './MyStore'; // Import the store
+  
+	function toggleNavbar() {
+	  showNavbar.update(showNavbar => !showNavbar); // Update the store value
+	}
 </script>
 
-<button aria-label="Hamburger" class:showLeftSideBar on:click={() => showLeftSideBar = !showLeftSideBar}>
+<button aria-label="Hamburger" class:showNavbar={$showNavbar} on:click={toggleNavbar}>
 	<svg width=32 height=27>
 		<line id="top" x1=0 y1=2  x2=32 y2=2/>
 		<line id="middle" x1=0 y1=12 x2=32 y2=12/>
@@ -30,21 +34,16 @@
         box-shadow: inset 0 1px 1px var(--pico-background-color), 0 0px 15px var(--pico-primary-hover-background);
     }
 
-/*
-    .open svg {
-		transform: scale(0.7)
-	}
-*/	
-	.showLeftSideBar #top {
+	.showNavbar #top {
 		transform: translate(6px, 0px) rotate(45deg)
 	}
 	
-	.showLeftSideBar #middle {
+	.showNavbar #middle {
 		opacity: 0;
 	}
 	
     
-    .showLeftSideBar #bottom {
+    .showNavbar #bottom {
 		transform: translate(-12px, 9px) rotate(-45deg)
 	}
     

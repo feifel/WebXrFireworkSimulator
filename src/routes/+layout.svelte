@@ -4,32 +4,43 @@
     @use "@picocss/pico/scss/pico" with (
         $theme-color: "azure"
     );
-    #layout {
+    html, body, layout {
+        margin: 0;
+        padding: 0;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-    };
+    }
+    layout {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: grid;
+        grid-template-areas: "header" "content" "footer";
+        grid-template-rows: 0fr 1fr 0fr;
+        overflow: hidden;
+    }
     #content {
-        flex:1;
+        grid-area: content;
+        display: grid;
+        grid-template-areas: "navbar page";
+        grid-template-columns: max-content auto;
+        overflow: hidden;
         position: relative;
-        overflow: auto;
+        /*border: 5px solid red;*/
     }
 </style>
 
 <script lang="ts">
 	import '@picocss/pico'
     import MyHeader from '$lib/components/MyHeader.svelte'
-    import MyLeftSidebar from '$lib/components/MyLeftSideBar.svelte'
-
-	let showLeftSideBar = false
+    import MyNavbar from '$lib/components/MyNavbar.svelte'
+    import MyFooter from '$lib/components/MyFooter.svelte'
 </script>
-<div id="layout">
-    <MyHeader bind:showLeftSideBar/>
+<layout>
+    <MyHeader/>    
     <div id="content">
-        <MyLeftSidebar bind:showLeftSideBar/>
-        <main>
-            <slot />
-       </main>  
+        <MyNavbar/>        
+        <slot/>
     </div>
-    <footer/>
-</div>
+    <MyFooter/>
+</layout>
+
