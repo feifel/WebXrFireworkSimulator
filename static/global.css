@@ -1,0 +1,9 @@
+ul {
+    padding: 0; /* Remove padding */
+}
+li {
+    list-style-type: none; /* Remove bullets */
+}
+a {
+    text-decoration: none; /* Remove underline on links */
+} 
