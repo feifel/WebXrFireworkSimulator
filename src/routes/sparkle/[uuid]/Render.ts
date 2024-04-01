@@ -12,9 +12,9 @@ export default class Render {
         this.scene = new Scene(this.engine);
     }
 
-    setup(): void {
+    async setup() {
         // Setup environment
-        var camera = new ArcRotateCamera("ArcRotateCamera", 1, 1, 6, new Vector3(0, 0, 0), this.scene);
+        var camera = new ArcRotateCamera("ArcRotateCamera", 2, 2, 6, new Vector3(0, 0, 0), this.scene);
         camera.attachControl(this.canvas, true);
 
         // Create a particle system
@@ -66,6 +66,14 @@ export default class Render {
                 }
             }
         });	
+
+        // add XR support
+        const environment = this.scene.createDefaultEnvironment();
+        if(environment && environment.ground) {
+            const xrHelper = await this.scene.createDefaultXRExperienceAsync({
+                floorMeshes: [environment.ground]
+            });
+        }
     }
 
     // run the main render loop
