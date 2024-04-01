@@ -1,7 +1,7 @@
 import "@babylonjs/core/Debug/debugLayer";
 import "@babylonjs/inspector";
 import * as BABYLON from '@babylonjs/core';
-//import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, Mesh, MeshBuilder, FreeCamera, ParticleSystem, Texture, Color4, PointLight, StandardMaterial, Color3 } from "@babylonjs/core";
+import { base } from '$app/paths';
 
 export default class Render {
     canvas: HTMLCanvasElement
@@ -22,7 +22,7 @@ export default class Render {
         var particleSystem = new BABYLON.ParticleSystem("particles", 2000, this.scene);
 
         //Texture of each particle
-        particleSystem.particleTexture = new BABYLON.Texture("/textures/flare.png", this.scene);
+        particleSystem.particleTexture = new BABYLON.Texture(base + "/textures/flare.png", this.scene);
 
         // Where the particles come from
         particleSystem.emitter = BABYLON.Vector3.Zero(); // the starting location
