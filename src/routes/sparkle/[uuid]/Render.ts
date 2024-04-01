@@ -22,7 +22,7 @@ export default class Render {
         var particleSystem = new BABYLON.ParticleSystem("particles", 2000, this.scene);
 
         //Texture of each particle
-        particleSystem.particleTexture = new BABYLON.Texture(base + "/textures/flare.png", this.scene);
+        particleSystem.particleTexture = new BABYLON.Texture(base + "/textures/sparkle.png", this.scene);
 
         // Where the particles come from
         particleSystem.emitter = BABYLON.Vector3.Zero(); // the starting location
