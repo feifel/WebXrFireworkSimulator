@@ -8,7 +8,7 @@
         overflow-x: hidden;
         grid-area: navbar;
         z-index: 2;
-        width: 200px;
+        width: 220px;
         background-color: var(--pico-muted-border-color);
         transition-property: width, border;
         transition-duration: 0.5s, 0.5s;
@@ -21,7 +21,7 @@
         border: 0px solid lightgreen;
     }
     ul {
-        width:175px;
+        width:195px;
         padding: 0; /* Remove padding */
         margin: 10px; /* Remove margins */
     }
@@ -46,7 +46,8 @@
         <li><a href="/">About</a></li>
         <li><a href="/sparkle">Sparkle</a></li>
         <li><a href="#sparkleMix">Sparkle Mix</a></li>
-        <li><a href="#firework">Firework</a></li>
+        <li><a href="#fireworkComponent">Firework Component</a></li>
+        <li><a href="#Firework">Firework</a></li>
         <li><a href="#scene">Scene</a></li>
         <li><a href="#playlist">Playlist</a></li>
     </ul>
