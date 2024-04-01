@@ -25,7 +25,7 @@ export default class Render {
         particleSystem.particleTexture = new BABYLON.Texture(base + "/textures/sparkle.png", this.scene);
 
         // Where the particles come from
-        particleSystem.emitter = BABYLON.Vector3.Zero(); // the starting location
+        particleSystem.emitter = new BABYLON.Vector3(0,0.5,0); // the starting location
 
         // Colors of all particles
         particleSystem.color1 = new BABYLON.Color4(0.99, 0.9, 0.08);
