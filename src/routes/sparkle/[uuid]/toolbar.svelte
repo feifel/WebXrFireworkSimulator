@@ -3,7 +3,8 @@
     import MyToolbar from '$lib/components/MyToolbar.svelte';
     import { liveQuery } from "dexie";
     import { MyDb } from "$lib/db";
-	import type { Sparkle } from '$lib/types/sparkle';
+    import { base } from '$app/paths';
+    import type { Sparkle } from '$lib/types/sparkle';
 
     export let myUuid = "";
     let sparkle : Sparkle = {id:myUuid, name:"", description:"", json:""};
@@ -58,6 +59,6 @@
         <button type="submit">Save</button>
     </form>
     <ul>
-        <li><a href="/sparkle">Close</a></li>
+        <li><a href="{base}/sparkle">Close</a></li>
     </ul>    
 </MyToolbar>

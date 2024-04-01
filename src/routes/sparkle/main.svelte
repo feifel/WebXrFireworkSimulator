@@ -2,6 +2,7 @@
     import MyTitle from '$lib/components/MyTitle.svelte';
     import { liveQuery } from "dexie";
     import { MyDb } from "$lib/db";
+    import { base } from '$app/paths';
 
     // Create an instance of MyDb
     const db = new MyDb();
@@ -35,7 +36,7 @@
     <ul>
         {#if $sparkles}
             {#each $sparkles as sparkle (sparkle.id)}
-                <li><a href="/sparkle/{sparkle.id}">{sparkle.name}</a></li>
+                <li><a href="{base}/sparkle/{sparkle.id}">{sparkle.name}</a></li>
             {/each}
         {/if}
       </ul>

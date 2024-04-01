@@ -1,5 +1,6 @@
 <script>    
 	import { showNavbar } from './MyStore'; // Import the store
+    import { base } from '$app/paths';
 </script>
 <style>
     #navbar {
@@ -43,8 +44,8 @@
 </style>
 <div id="navbar" class:hideNavbar={!$showNavbar}>
     <ul>
-        <li><a href="/">About</a></li>
-        <li><a href="/sparkle">Sparkle</a></li>
+        <li><a href="{base}/">About</a></li>
+        <li><a href="{base}/sparkle">Sparkle</a></li>
         <li><a href="#sparkleMix">Sparkle Mix</a></li>
         <li><a href="#fireworkComponent">Firework Component</a></li>
         <li><a href="#Firework">Firework</a></li>
