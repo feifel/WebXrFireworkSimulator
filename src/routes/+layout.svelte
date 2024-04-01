@@ -2,7 +2,7 @@
     /* supported theme-colors: red, pink, fuchsia, purple, violet, indigo, blue, azure, 
     cyan, jade, green, lime, yellow, amber, pumpkin, orange, sand, grey, zinc, slate */
     @use "@picocss/pico/scss/pico" with (
-        $theme-color: "azure"
+        $theme-color: "pumpkin"
     );
     html, body, layout {
         margin: 0;

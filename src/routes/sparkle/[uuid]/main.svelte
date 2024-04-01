@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-	import Render from "./Render.js";
+    import Render from "./Render";
     let canvas: HTMLCanvasElement;
     let render: Render;
     onMount(async () => {
