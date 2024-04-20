@@ -19,7 +19,7 @@
     #navbar.hideNavbar {
         padding-right: 0px;
         width: 0px;
-        border: 0px solid lightgreen;
+        /*border: 0px solid lightgreen;*/
     }
     ul {
         width:195px;

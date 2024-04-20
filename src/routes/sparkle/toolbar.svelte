@@ -6,7 +6,7 @@
 
     const newUuid = uuidv4();
 </script>
-<link rel="stylesheet" href="/global.css">
+<link rel="stylesheet" href="{base}/global.css">
 <MyToolbar>
     <MyTitle fontSize='30px'>Sparkle</MyTitle>
     Actions:

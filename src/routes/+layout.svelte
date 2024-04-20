@@ -4,11 +4,6 @@
     @use "@picocss/pico/scss/pico" with (
         $theme-color: "pumpkin"
     );
-    html, body, layout {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
     layout {
         margin: 0;
         padding: 0;
