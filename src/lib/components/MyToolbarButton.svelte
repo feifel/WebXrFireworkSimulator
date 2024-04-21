@@ -6,10 +6,10 @@
     }
 </script>
 
-<button aria-label="Toolbar Button" class:showToolbar={$showToolbar} on:click={toggleToolbar}>
-	<svg width=32 height=27>
-		<line id="top" x1=8 y1=2  x2=26 y2=11/>
-		<line id="bottom" x1=8 y1=22 x2=26 y2=11/>
+<button type="button" class="btn btn-primary" aria-label="Toolbar Button" class:showToolbar={$showToolbar} on:click={toggleToolbar}>
+	<svg width=32 height=28>
+		<line id="top" x1=8 y1=3  x2=26 y2=15/>
+		<line id="bottom" x1=8 y1=26 x2=26 y2=14/>
 	</svg>
 </button>
 
@@ -25,19 +25,25 @@
 		transition: transform 0.3s ease-in-out
 	}
 	
-	button {
+	button {	
 		z-index: 20;
+		padding:5px;
+		margin:2px;
+		line-height:0;
+		background-color: var(--color-primary);
+		border-radius: 0.25rem;
+		border-color: var(--color-primary-tint1);
 	}
 
     button:hover {
-        box-shadow: inset 0 1px 1px var(--pico-background-color), 0 0px 15px var(--pico-primary-hover-background);
+        box-shadow: inset 0 0px 1px var(--color-primary-shade1), 0 0px 15px var(--color-primary-shade1);
     }
     
     .showToolbar #top {
-		transform: translate(32px, -2px) rotate(100deg)
+		transform: translate(34px, 0px) rotate(99deg)
 	}
 		
     .showToolbar #bottom {
-		transform: translate(23px, -6px) rotate(80deg)
+		transform: translate(26px, -5px) rotate(80deg)
 	}
 </style>

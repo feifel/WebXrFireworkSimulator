@@ -10,7 +10,7 @@
         grid-area: navbar;
         z-index: 2;
         width: 220px;
-        background-color: var(--pico-muted-border-color);
+        background-color: var(--color-bg-neutral-shade1);
         transition-property: width, border;
         transition-duration: 0.5s, 0.5s;
         transition-timing-function: ease-in-out, ease-in-out;
@@ -29,12 +29,10 @@
     li {
         list-style-type: none; /* Remove bullets */
     }
-    a {
-        text-decoration: none;
+    a:hover {        
+        text-shadow: 0px 0px 10px var(--color-primary); /* Add a shadow on hover */
     }
-    a:hover {
-        color: var(--pico-primary-hover-background);
-    }
+
     @media only screen and (max-width: 600px) {
         #navbar {
           position: absolute;

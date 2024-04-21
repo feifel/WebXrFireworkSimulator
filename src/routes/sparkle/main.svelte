@@ -29,6 +29,9 @@
         padding: 10px;
         /*border: 5px solid cyan;*/
     }
+    a:hover {        
+        text-shadow: 0px 0px 10px var(--color-primary); /* Add a shadow on hover */
+    }
 </style>
 <main>
     <MyTitle fontSize='30px'>Sparkle</MyTitle>

@@ -8,8 +8,10 @@
 	header {
         grid-area: header;
         display: flex;
-		border-bottom: solid 2px var(--pico-muted-border-color);
-        /*border: 5px solid yellow;*/
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-image: linear-gradient(90deg, var(--color-primary-shade1),var(--color-primary-tint1),var(--color-primary-shade1)) 1;
+		background-color: var(--color-bg-neutral-shade1);
 	}
 	center {
 		flex: 1;
@@ -17,9 +19,9 @@
 </style>
 
 <header>
-    <a href="#1"><MyNavbarButton/></a>
+    <MyNavbarButton/>
     <center><MyHeaderTitle/></center>
 	{#if showToolbarButton}
-		<a href="#2"><MyToolbarButton/></a>
+		<MyToolbarButton/>
 	{/if}
 </header>

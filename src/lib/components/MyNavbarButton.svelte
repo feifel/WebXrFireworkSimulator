@@ -6,11 +6,11 @@
 	}
 </script>
 
-<button aria-label="Hamburger" class:showNavbar={$showNavbar} on:click={toggleNavbar}>
-	<svg width=32 height=27>
-		<line id="top" x1=0 y1=2  x2=32 y2=2/>
-		<line id="middle" x1=0 y1=12 x2=32 y2=12/>
-		<line id="bottom" x1=0 y1=22 x2=32 y2=22/>
+<button type="button" class="btn btn-primary" aria-label="Hamburger" class:showNavbar={$showNavbar} on:click={toggleNavbar}>
+	<svg width=32 height=28>
+		<line id="top" x1=0 y1=5  x2=32 y2=5/>
+		<line id="middle" x1=0 y1=14 x2=32 y2=14/>
+		<line id="bottom" x1=0 y1=23 x2=32 y2=23/>
 	</svg>
 </button>
 
@@ -27,15 +27,21 @@
 	}
 	
 	button {
-		z-index: 0;
+		z-index: 20;
+		padding:5px;
+		margin:2px;
+		line-height:0;
+		background-color: var(--color-primary);
+		border-radius: 0.25rem;
+		border-color: var(--color-primary-tint1);
 	}
 
     button:hover {
-        box-shadow: inset 0 1px 1px var(--pico-background-color), 0 0px 15px var(--pico-primary-hover-background);
+        box-shadow: inset 0 0px 1px var(--color-primary-shade1), 0 0px 15px var(--color-primary-shade1);
     }
 
 	.showNavbar #top {
-		transform: translate(6px, 0px) rotate(45deg)
+		transform: translate(8px, -1px) rotate(45deg)
 	}
 	
 	.showNavbar #middle {

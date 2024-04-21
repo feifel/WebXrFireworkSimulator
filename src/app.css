@@ -1,0 +1,46 @@
+:root {
+    /*
+    --color-primary-shade1: hwb(180 20% 40%);
+    --color-primary: hwb(180 20% 20%);
+    --color-primary-tint1: hwb(180 20% 0%);
+    --color-neutral-shade1: hwb(180 67% 33%);
+    --color-neutral: hwb(180 80% 20%);
+    --color-neutral-tint1: hwb(180 80% 0%);
+
+    --color-bg-neutral-shade1: hwb(240 0% 94%);
+    --color-bg-neutral: hwb(240 2% 92%);
+    --color-bg-neutral-tint1: hwb(240 2% 86%);
+    --color-input-border: hwb(240 10% 85%);
+    --color-input-bg:hwb(240 5% 93%);
+    */     
+    
+    --color-primary-shade1: hwb(35 20% 40%);
+    --color-primary: hwb(35 20% 20%);
+    --color-primary-tint1: hwb(35 20% 0%);
+    --color-neutral-shade1: hwb(35 67% 33%);
+    --color-neutral: hwb(35 80% 20%);
+    --color-neutral-tint1: hwb(35 80% 0%);
+
+    --color-bg-neutral-shade1: hwb(35 0% 94%);
+    --color-bg-neutral: hwb(35 2% 92%);
+    --color-bg-neutral-tint1: hwb(35 2% 86%);
+    --color-input-border: hwb(35 10% 85%);
+    --color-input-bg:hwb(35 5% 93%);   
+}
+ul {
+    padding: 0; /* Remove padding */
+}
+li {
+    list-style-type: none; /* Remove bullets */
+    padding-top: 5px;
+}
+a {
+    text-decoration: none; /* Remove underline on links */
+    color: var(--color-primary);
+}
+
+html {
+    background-color: var(--color-bg-neutral);
+    color: var(--color-neutral);
+}
+

@@ -6,7 +6,11 @@
 
     const newUuid = uuidv4();
 </script>
-<link rel="stylesheet" href="{base}/global.css">
+<style>    
+    a:hover {        
+        text-shadow: 0px 0px 10px var(--color-primary); /* Add a shadow on hover */
+    }
+</style>
 <MyToolbar>
     <MyTitle fontSize='30px'>Sparkle</MyTitle>
     Actions:

@@ -8,6 +8,8 @@
         z-index: 0;
         padding: 10px;
         /*border: 5px solid cyan;*/
+        background-color: var(--color-bg-neutral);
+        color: var(--color-neutral);
     }
 </style>
 <main>

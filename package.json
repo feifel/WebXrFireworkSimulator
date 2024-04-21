@@ -14,7 +14,6 @@
 	"devDependencies": {
 		"@babylonjs/core": "^6.44.0",
 		"@babylonjs/inspector": "^6.44.0",
-		"@picocss/pico": "^2.0.6",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/kit": "^2.0.0",

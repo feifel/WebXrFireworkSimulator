@@ -1,9 +1,4 @@
-<style lang="scss">
-    /* supported theme-colors: red, pink, fuchsia, purple, violet, indigo, blue, azure, 
-    cyan, jade, green, lime, yellow, amber, pumpkin, orange, sand, grey, zinc, slate */
-    @use "@picocss/pico/scss/pico" with (
-        $theme-color: "pumpkin"
-    );
+<style>
     layout {
         margin: 0;
         padding: 0;
@@ -25,17 +20,16 @@
 </style>
 
 <script lang="ts">
-	import '@picocss/pico'
+    import '../app.css';
     import MyHeader from '$lib/components/MyHeader.svelte'
     import MyNavbar from '$lib/components/MyNavbar.svelte'
     import MyFooter from '$lib/components/MyFooter.svelte'
 </script>
 <layout>
-    <MyHeader/>    
+    <MyHeader/>
     <div id="content">
         <MyNavbar/>        
         <slot/>
     </div>
     <MyFooter/>
 </layout>
-

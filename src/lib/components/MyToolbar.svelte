@@ -8,7 +8,7 @@
         overflow-y: auto;
         grid-area: toolbar;
         z-index: 1;
-        background-color: var(--pico-muted-border-color);
+        background-color: var(--color-bg-neutral-shade1);
         /*border: 5px solid green;*/
     }
     #toolbar.hideToolbar {
@@ -17,7 +17,7 @@
         width: 0px;
         height: 0px;
         border: 0px;
-    }   
+    }
 </style>
 <div id="toolbar" class:hideToolbar={!$showToolbar}>
     <slot></slot>
